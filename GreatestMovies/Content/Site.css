@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('Images/jfS4bg.jpg');
+    background-size: cover;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -10,8 +12,7 @@
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
+   will truncate terms that are too long to fit in the left column */
 .dl-horizontal dt {
     white-space: normal;
 }
@@ -22,3 +23,23 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.card .thumbnail {
+	padding: 0;
+	border: none;
+	text-align: center;
+	border-radius: 20px;
+    -webkit-transition: width 2s, height 4s;
+    transition: width 2s, height 4s;
+    border: 2px solid black;
+    /*background-color: #DAA520;
+    color: red;*/
+}
+
+.card .thumbnail:hover {
+    width: 300px;
+    height: 250px;
+
+}
+
+
