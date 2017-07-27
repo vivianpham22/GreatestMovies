@@ -12,11 +12,10 @@ namespace GreatestMovies.Models
         [Key]
         public int ActorID { get; set; }
         public string ActorName { get; set; }
-        public string DOB { get; set; }
+        public DateTime DOB { get; set; }
         public string Nationality { get; set; }
         public string Gender { get; set; }
 
-        [ForeignKey("Movie")]
         public virtual ICollection<Movie> Movies { get; set; }
 
 
